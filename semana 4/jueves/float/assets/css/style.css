@@ -1,0 +1,27 @@
+*{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+h1{
+    margin: 30px 130px;
+}
+/*max-width es el tamaño maximo que va a tener el elemento, min-width es lo minimo que va a estar su tamaño*/
+.cajas{
+    max-width: 80%;
+    height: 900px;
+    border: 5px solid blue;
+    margin: 0 auto;
+    background-color: aquamarine;
+}
+.caja{
+    padding: 20px 30px;
+    width: 180px;
+    height: 180px;
+    border: 5px solid rgb(238, 71, 11);
+    margin: 10px;
+    background-color: rgb(241, 148, 41);
+    float: left;
+}
+.clearfix{
+    float: none;
+    clear: both;
+}

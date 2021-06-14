@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formularios y tablas</title>
+</head>
+<body>
+    <h1>Formularios y tablas</h1>
+
+    <table border="1">
+        <tr>
+            <td>celda 1</td>
+            <td>celda 2</td>
+            <td>celda 3</td>
+        </tr>
+        <tr>
+            <td>celda 4</td>
+            <td>celda 5</td>
+            <td>celda 6</td>
+        </tr>
+    </table>
+    <div style="margin-top: 20px;">
+        <table border="1">
+            <tr>
+                <th>Lunes</th>
+                <th>Martes</th>
+                <th>Miercoles</th>
+                <th>Jueves</th>
+                <th>Viernes</th>
+                <th>Sabado</th>
+            </tr>
+            <tr>
+                <td>Curso de JS</td>
+                <td>Curso de Boostrap</td>
+                <td>Curso de HTML</td>
+                <td>Curso de Java</td>
+                <td>Curso de CSS</td>
+                <td rowspan="4"">Ingles</td>
+            </tr>
+            <tr>
+                <td>Mentoria</td>
+                <td>Mentoria</td>
+                <td>Mentoria</td>
+                <td>Mentoria</td>
+                <td>Mentoria</td>
+            </tr>
+            <tr>
+                <td>Curso de HTML</td>
+                <td>Curso de Java</td>
+                <td>Curso de CSS</td>
+                <td>Curso de Boostrap</td>
+                <td>Curso de JS</td>
+            </tr>
+        </table> 
+    </div>
+    <div style="margin-top: 30px;">
+        <table border="1">
+            <tr>
+                <td colspan="2"></td> <!--coldspan es para extender en horizontal-->
+                <td>Nombre</td>
+                <td>Masa</td>
+                <td>Diametro</td>
+                <td>Densidad </td>
+                <td>Gravedad</td>
+                <td>Duracion del dia</td>
+            </tr>
+            <tr>
+                <td colspan="2" rowspan="4">Planetas terrestres</td> <!--rowspan es para extender en vertical-->
+                <td>Mercurio</td>
+                <td>0,33</td>
+                <td>4.879</td>
+                <td>5.427</td>
+                <td>3,7</td>
+                <td>4.222,6</td>
+            </tr>
+            <tr>
+                <td>Venus</td>
+                <td>0,33</td>
+                <td>4.879</td>
+                <td>5.427</td>
+                <td>3,7</td>
+                <td>4.222,6</td>
+            </tr>
+            <tr>
+                <td>La Tierra</td>
+                <td>0,33</td>
+                <td>4.879</td>
+                <td>5.427</td>
+                <td>3,7</td>
+                <td>4.222,6</td>
+            </tr>
+            <tr>
+                <td>Marte</td>
+                <td>0,33</td>
+                <td>4.879</td>
+                <td>5.427</td>
+                <td>3,7</td>
+                <td>4.222,6</td>
+            </tr>
+            <tr>
+                <td rowspan="4">Planetas jovianos</td>
+                <td rowspan="2">Los gigantes de gas</td>
+                <td>Jupiter</td>
+                <td>0,33</td>
+                <td>4.879</td>
+                <td>5.427</td>
+                <td>3,7</td>
+                <td>4.222,6</td>
+            </tr>
+            <tr>
+                <td>Saturno</td>
+                <td>0,33</td>
+                <td>4.879</td>
+                <td>5.427</td>
+                <td>3,7</td>
+                <td>4.222,6</td>
+            </tr>
+            <tr>
+                <td rowspan="2">Los gigantes de hielo</td>
+                <td>Urano</td>
+                <td>0,33</td>
+                <td>4.879</td>
+                <td>5.427</td>
+                <td>3,7</td>
+                <td>4.222,6</td>
+            </tr>
+            <tr>
+                <td>Neptuno</td>
+                <td>0,33</td>
+                <td>4.879</td>
+                <td>5.427</td>
+                <td>3,7</td>
+                <td>4.222,6</td>
+            </tr>
+
+        </table>
+    </div>
+    <hr>
+    <section>
+        <form method="POST"> <!--el metodo post hace que no se vea la info en la URL-->
+            <h3>Registrate</h3>
+            <!--Siempre hay que enlazar el label con el input a traves de for y name-->
+            <label for="nombre">Nombre</label> 
+            <input type="text" name="nombre" placeholder="Nombre">
+
+            <!--Hay diferentes tipos de input, email, password, text, etc. Esto ayuda a detectar mejor el tipo de dato que es por ejemplo para ocultar la contraseña-->
+            <label for="correo">Correo electronico</label> 
+            <input type="email" name="correo" placeholder="correro@introducelo">
+            
+            <!--para contraseñas-->
+            <label for="password">Contraseña</label>
+            <input type="password" name="password"> 
+            
+            <!--para fechas, sale un calendario-->
+            <label for="fecha">Cumpleaños</label>
+            <input type="date" name="fecha"> 
+
+            <!--Para seleccionar una opcion de una lista-->
+            <select name="meses" id=""> 
+                <option value="">Enero</option>
+                <option value="">Febrero</option>
+                <option value="">Marzo</option>
+                <option value="">Abril</option>
+                <option value="">Mayo</option>
+            </select>
+
+            <!--Seleccionar una opcion entre varias opciones-->
+            <input type="radio" name="color" value="rojo"> 
+            <label for="color">Rojo</label>
+            <input type="radio" name="color" value="verde">
+            <label for="color">Verde</label>
+
+            <!--Introducir texto-->
+            <textarea name="muchotexto" id="" cols="50" rows="20"></textarea> 
+
+            <input type="checkbox" name="" id=""> <!--checkbox-->
+            <label for="">Opcion 1</label>
+
+           <!--mandar la informacion con boton e input--> 
+            <input type="submit" value="Registrar">
+            <button type="submit">Boton</button>
+        </form>
+    </section>
+</body>
+</html>

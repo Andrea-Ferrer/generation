@@ -1,0 +1,29 @@
+.cajas{
+    max-width: 1000px;
+    background-color: gainsboro;
+    display: flex;
+    height: 600px;
+    border: 3px solid black;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+}
+
+.caja{
+    width: 200px;
+    height: 200px;
+    border: 3px solid black;
+    margin: 10px;
+}
+.roja{
+    background-color: red;
+}
+.verde{
+    background-color:green;
+}
+.azul{
+    background-color: blue;
+}
+.amarillo{
+    background-color: yellow;
+}
